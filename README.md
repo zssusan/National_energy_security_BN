@@ -4,18 +4,7 @@ This supplementary package provides the data, Python code, and Netica network fi
 The package contains the following files:
 •	Supplementary_data.xlsx: Contains the empirical data used to construct and analyse the energy security index, compiled from the U.S. Energy Information Administration (EIA), the Statistical Review of World Energy, and CEIC. The file contains five sheets: Bibliographic Data, Raw Data, Normalized Range, Discretized Data, and Descriptive Statistics.
 •	Bayesian_ESI.py: Implements the data preprocessing, discretization, and Bayesian network structure-learning procedures described in the manuscript. The resulting network structure and estimated parameters are stored in Forecast_ESI.neta.
-•	Forecast_ESI.neta: A Netica network workspace file containing the learned Bayesian network, including its structure and parameterized conditional probability tables (CPTs). The meanings of all variable abbreviations used in Forecast_ESI.neta are provided in Table 1 below.
-
-Table 1. Variable abbreviations and full names used in the Netica workspace
-Abbreviation	Full name	Abbreviation	Full name
-EP	Electricity price	CHHI	Consumption HHI
-OP	Oil price	IOC	Import to consumption
-RTP	Reserve to production	CPC	Carbon emission per capita
-WGI	Worldwide Governance Indicators	POC	Production to consumption
-CPS	Clean energy production share	CCS	Clean energy consumption share
-ECPC	Electricity consumption per capita	EDLPG	Electricity distribution losses ratio
-COG	Consumption to GDP	PHHI	Production HHI
-
+•	Forecast_ESI.neta: A Netica network workspace file containing the learned Bayesian network, including its structure and parameterized conditional probability tables (CPTs). 
 Data preprocessing and Bayesian network structure learning were conducted in Python, while probabilistic inference and sensitivity analysis were conducted in Netica.
 
 2. Reproducing the Sensitivity Analysis
